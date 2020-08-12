@@ -1,0 +1,5 @@
+print('풍선')
+print("나비")
+print("ㅋㅋㅋ")
+print("ㅋ"*3)
+print('ㅋ'*3)
