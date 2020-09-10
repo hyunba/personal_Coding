@@ -1,0 +1,7 @@
+h1{color:blue}
+#select{font-size:50px;}
+li{color:red;}
+#lecture>li{border:1px solid red;}
+a:active{color:green}
+a:hover{color:paleturquoise}
+a:link{color: black}
