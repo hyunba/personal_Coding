@@ -1,0 +1,100 @@
+:root {
+    --text-color: #f0f4f5;
+    --background color: #263343;
+    --accent-color: #d49466;
+} /*한번에 바꾸고 싶을때 root로 지정해서 하는 방법이 있다.*/
+
+body{
+    margin: 0;
+    font-family : 'Source Sans Pro';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+}
+.navbar__logo{
+    font-size: 24px;
+    color: white;
+}
+
+.navbar__logo i {
+    color: #d49466;
+}
+
+.navbar__menu {
+    display: flex; /*한줄로 세워줌*/
+    list-style: none;
+    padding-left: 0; /*중간이 아닌 이유는 숨겨진 패딩이 있어서!*/
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover{
+    background-color: #d49466; /*menu에 마우스 포인터를 올릴 때 색 변화를 줌*/
+    border-radius: 4px; /*네모를 조금 깎아주는 역할*/
+}
+
+.navbar__icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0; /*중간이 아닌 이유는 숨겨진 패딩이 있어서!*/
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+}
+
+.navbar__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;
+}
+
+.navbar__menu.active,
+.navbar__icons.active {
+    display: flex;
+}
+
+@media screen and (max-width:768px) {/*레이아웃을 반응형으로 사용할 때 미디어 쿼리를 사용*/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /*메뉴가 작아서 작동을 안해서 100으로 맞춰줌*/
+    }
+
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__icons{
+        display: none;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .navbar__toogleBtn{
+        display: block;
+    }
+}
