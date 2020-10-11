@@ -1,3 +1,3 @@
-# personal_Coding
+# 2020 9월 ~ 12월 졸업준비중
+Personal Coding
 C++ and Python
-9월 ~ 12월 마지막 학기로 인해 졸업 
