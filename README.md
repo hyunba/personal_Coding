@@ -1,3 +1,3 @@
-# 2020 9월 ~ 12월 졸업준비중
+# 코딩 공부!
 Personal Coding
 C++ and Python
