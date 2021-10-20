@@ -72,4 +72,4 @@ async def URL재생(ctx, *, url):
     else:
         await ctx.send("노래가 이미 재생되고 있습니다!")
 
-bot.run('ODc4OTI3MTE4ODcwOTA4OTk5.YSISqg.c2T0LEDL5aimijr9IkUeM3_A2Q4')
+bot.run('Token Number')
